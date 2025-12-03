@@ -1,15 +1,11 @@
 /// <reference path="./Teacher.ts" />
 
 namespace Subjects {
-  export interface Subject {
-    teacher: Teacher;
-    setTeacher(teacher: Teacher): void;
-  }
-
-  export class Subject implements Subject {
+  export class Subject {
     teacher: Teacher;
 
-    setTeacher(teacher: Teacher): void {
+    // prettier-ignore
+    setTeacher(teacher:Teacher): void {
       this.teacher = teacher;
     }
   }
