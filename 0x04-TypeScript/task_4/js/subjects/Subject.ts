@@ -5,7 +5,7 @@ namespace Subjects {
     teacher: Teacher;
 
     // prettier-ignore
-    setTeacher(teacher:Teacher): void {
+    setTeacher(teacher:Teacher) {
       this.teacher = teacher;
     }
   }
