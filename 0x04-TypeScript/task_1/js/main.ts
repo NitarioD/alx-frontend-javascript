@@ -20,7 +20,8 @@ interface printTeacherFunction {
 }
 
 function printTeacher(firstName: string, lastName: string): string {
-  return `${firstName} ${lastName}`;
+  const teacher = { firstName, lastName };
+  return `${firstName.charAt(0)} ${lastName}`;
 }
 
 interface StudentClassInterface {
