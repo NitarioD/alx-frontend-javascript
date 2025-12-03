@@ -24,19 +24,13 @@ function printTeacher(firstName: string, lastName: string): string {
   return `${firstName}. ${lastName}`;
 }
 
-interface StudentClassInterface {
+class StudentClass {
   firstName: string;
   lastName: string;
-  workOnHomework(): string;
-  displayName(): string;
-}
-
-interface StudentClassConstructor {
-  new (firstName: string, lastName: string): StudentClassInterface;
-}
-
-class StudentClass implements StudentClassInterface {
-  constructor(public firstName: string, public lastName: string) {}
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
 
   workOnHomework(): string {
     return "Currently working";
