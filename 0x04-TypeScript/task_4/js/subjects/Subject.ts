@@ -1,12 +1,12 @@
 /// <reference path="./Teacher.ts" />
 
 namespace Subjects {
-  export interface ISubject {
+  export interface Subject {
     teacher: Teacher;
     setTeacher(teacher: Teacher): void;
   }
 
-  export class Subject implements ISubject {
+  export class Subject implements Subject {
     teacher: Teacher;
 
     setTeacher(teacher: Teacher): void {
